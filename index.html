@@ -1,35 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./style.css" />
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
+		<title>Pricing component</title>
+	</head>
+	<body>
+		<section class="background">
+			<section class="heading">Our Pricing</section>
+			<section class="toggle-container">
+				<article>Annually</article>
+				<section class="toggle"></section>
+				<article>Monthly</article>
+			</section>
+			<section class="columns-container">
+				<section class="column basic">
+					Basic
+					<section class="price">
+						<section class="dollar">$</section>
+						19.99
+					</section>
+					<section class="details">
+						<section class="divider"></section>
+						<section class="storage">500 GB Storage</section>
+						<section class="divider"></section>
+						<section class="number-of-users">2 Users Allowed</section>
+						<section class="divider"></section>
+						<section class="data-limit">Send up to 3 GB</section>
+						<section class="divider"></section>
+					</section>
+					<section class="button">
+						<button>Learn More</button>
+					</section>
+				</section>
 
-    <title>Pricing component</title>
+				<section class="column professional">
+					Professional
+					<section class="price">
+						<section class="dollar">$</section>
+						24.99
+					</section>
+					<section class="details">
+						<section class="divider"></section>
+						<section class="storage">1 TB Storage</section>
+						<section class="divider"></section>
+						<section class="number-of-users">5 Users Allowed</section>
+						<section class="divider"></section>
+						<section class="data-limit">Send up to 10 GB</section>
+						<section class="divider"></section>
+					</section>
+					<section class="button">
+						<button>Learn More</button>
+					</section>
+				</section>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
-  </head>
-  <body>
-    Our Pricing Annually Monthly Basic &dollar;19.99 &dollar;199.99 500 GB
-    Storage 2 Users Allowed Send up to 3 GB Learn More Professional
-    &dollar;24.99 &dollar;249.99 1 TB Storage 5 Users Allowed Send up to 10 GB
-    Learn More Master &dollar;39.99 &dollar;399.99 2 TB Storage 10 Users Allowed
-    Send up to 20 GB Learn More
-  </body>
+				<section class="column master">
+					Master
+					<section class="price">
+						<section class="dollar">$</section>
+						39.99
+					</section>
+					<section class="details">
+						<section class="divider"></section>
+						<section class="storage">2 TB Storage</section>
+						<section class="divider"></section>
+						<section class="number-of-users">10 Users Allowed</section>
+						<section class="divider"></section>
+						<section class="data-limit">Send up to 20 GB</section>
+						<section class="divider"></section>
+					</section>
+					<section class="button">
+						<button>Learn More</button>
+					</section>
+				</section>
+			</section>
+		</section>
+	</body>
 </html>
