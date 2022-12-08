@@ -4,6 +4,12 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="./style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+			rel="stylesheet"
+		/>
 
 		<title>Pricing component</title>
 	</head>
@@ -12,15 +18,18 @@
 			<section class="heading">Our Pricing</section>
 			<section class="toggle-container">
 				<article>Annually</article>
-				<section class="toggle"></section>
+				<label class="toggle" for="myToggle">
+					<input class="toggle__input" type="checkbox" id="myToggle" />
+					<section class="toggle__fill"></section>
+				</label>
 				<article>Monthly</article>
 			</section>
 			<section class="columns-container">
 				<section class="column basic">
 					Basic
-					<section class="price">
+					<section class="price" id="basic-price">
 						<section class="dollar">$</section>
-						19.99
+						199.99
 					</section>
 					<section class="details">
 						<section class="divider"></section>
@@ -38,9 +47,9 @@
 
 				<section class="column professional">
 					Professional
-					<section class="price">
+					<section class="price" id="professional-price">
 						<section class="dollar">$</section>
-						24.99
+						249.99
 					</section>
 					<section class="details">
 						<section class="divider"></section>
@@ -52,15 +61,15 @@
 						<section class="divider"></section>
 					</section>
 					<section class="button">
-						<button>Learn More</button>
+						<button class="button-professional">Learn More</button>
 					</section>
 				</section>
 
 				<section class="column master">
 					Master
-					<section class="price">
+					<section class="price" id="master-price">
 						<section class="dollar">$</section>
-						39.99
+						399.99
 					</section>
 					<section class="details">
 						<section class="divider"></section>
@@ -77,5 +86,6 @@
 				</section>
 			</section>
 		</section>
+		<script src="index.js"></script>
 	</body>
 </html>
