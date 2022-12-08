@@ -166,17 +166,19 @@ button {
 }
 
 @media (max-width: 400px) {
-	*{
-		font-size: 30px;
+	* {
+		font-size: 25px;
 	}
 	body {
+		padding: 0px;
+		margin: 0px;
 		height: auto;
+		width: auto;
 	}
 	.columns-container {
 		display: flex;
 		flex-direction: column;
 		margin: auto;
-		padding: 5px;
 	}
 	.column.basic,
 	.column.master,
@@ -184,10 +186,9 @@ button {
 		margin: 10px 0;
 		width: auto;
 		height: 70vh;
-		border-radius: 5px;;
-
+		border-radius: 5px;
 	}
-	.column{
+	.column {
 		justify-content: space-evenly;
 	}
 }
